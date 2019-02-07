@@ -19,6 +19,7 @@ class GlossaryMain:
         inputWords=str(self.textbox.get())
         if(inputWords!="" or None):
             inputWords_split=inputWords.split(", ")
+            inputWords_split.sort()
             for i in range(0, len(inputWords_split)):
                 print(inputWords_split[i])
                 currentWord=dictionary.googlemeaning(str(inputWords_split[i]))
